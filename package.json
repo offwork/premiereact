@@ -1,0 +1,62 @@
+{
+    "name": "premiereact",
+    "version": "1.0.0",
+    "description": "sample react app with mobx",
+    "main": "index.js",
+    "scripts": {
+      "start": "parcel index.html",
+      "build": "parcel build index.html",
+      "lint": "npm run lint:js && npm run lint:css",
+      "lint:js": "tslint -p tsconfig.json -c tslint.json 'src/**/*.ts*'",
+      "lint:css": "stylelint src/**/*.scss"
+    },
+    "repository": {
+      "type": "git",
+      "url": ""
+    },
+    "author": {
+      "email": "chomunist@gmail.com",
+      "name": "kerem ozdemir"
+    },
+    "license": "MIT",
+    "dependencies": {
+      "axios": "^0.18.0",
+      "mobx": "^4.2.0",
+      "mobx-react": "^5.1.2",
+      "ramda": "^0.25.0",
+      "react": "^16.3.2",
+      "react-dom": "^16.3.2",
+      "react-router": "^4.2.0",
+      "react-router-dom": "^4.2.2",
+      "styled-components": "^3.2.6"
+    },
+    "devDependencies": {
+      "@types/node": "^8.10.12",
+      "@types/react": "^16.3.13",
+      "@types/react-dom": "^16.0.5",
+      "autoprefixer": "^8.4.1",
+      "babel-plugin-import": "^1.7.0",
+      "babel-plugin-module-resolver": "^3.1.1",
+      "babel-preset-env": "^1.6.1",
+      "babel-preset-react": "^6.24.1",
+      "babel-preset-stage-0": "^6.24.1",
+      "less": "^3.0.2",
+      "mobx-react-devtools": "^5.0.1",
+      "node-sass": "^4.9.0",
+      "parcel-bundler": "^1.8.1",
+      "parcel-plugin-typescript": "^0.7.1",
+      "postcss-modules": "^1.1.0",
+      "pre-commit": "^1.2.2",
+      "stylelint": "^9.2.0",
+      "stylelint-config-standard": "^18.2.0",
+      "stylelint-scss": "^3.1.0",
+      "tslint": "^5.10.0",
+      "tslint-config-standard": "^7.0.0",
+      "tslint-eslint-rules": "^5.1.0",
+      "tslint-react": "^3.5.1",
+      "typescript": "^2.8.3"
+    },
+    "pre-commit" : [
+      "lint"
+    ]
+  }
